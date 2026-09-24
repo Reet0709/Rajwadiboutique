@@ -7428,3 +7428,21 @@ button {
 .suit-img {
   cursor: pointer;
 }
+
+.suit-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.suit-custom-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gold-dark);
+  background-color: rgba(201, 169, 110, 0.15);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
