@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "Rajwadi/assets/uploads"
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 logo_url: "https://rajwadiboutique.com/assets/logo.png"
 
@@ -12,7 +12,7 @@ collections:
     files:
       - label: "All Products"
         name: "suits"
-        file: "Rajwadi/data/suits.json"
+        file: "data/suits.json"
         fields:
           - label: "Products Inventory"
             name: "suits"
@@ -31,7 +31,7 @@ collections:
     files:
       - label: "Instagram Reels"
         name: "reels"
-        file: "Rajwadi/data/reels.json"
+        file: "data/reels.json"
         fields:
           - label: "Reels Inventory"
             name: "reels"
@@ -50,7 +50,7 @@ collections:
     files:
       - label: "Client Testimonials"
         name: "testimonials"
-        file: "Rajwadi/data/testimonials.json"
+        file: "data/testimonials.json"
         fields:
           - label: "Testimonials"
             name: "testimonials"
