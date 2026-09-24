@@ -1,0 +1,62 @@
+{
+  "reels": [
+
+
+    {
+      "title": "Blue Draped Ruffle Saree",
+      "tag": "#FestiveWear",
+      "logTitle": "Designer's Note:",
+      "logNote": "A stunning blue draped ruffle saree offering effortless elegance and contemporary flair for any occasion.",
+      "url": "https://www.instagram.com/reel/CzLYjaGPCWf/?stkn=bTZnem54Z2gzczdx",
+      "image": "/assets/stories2.png",
+      "colorGroup": "blue"
+    },
+    {
+      "title": "Velvet Purple Suit",
+      "tag": "#Bespoke",
+      "logTitle": "Designer's Note:",
+      "logNote": "Rich velvet tailored into a royal purple suit, combining classic heritage silhouettes with a bold modern hue.",
+      "url": "https://www.instagram.com/reel/Cygh43jPYNf/?stkn=MWZpemFqOWgyZGd4aw%3D%3D",
+      "image": "/assets/stories3.png",
+      "colorGroup": "purple"
+    },
+  
+    {
+      "title": "Fuchsia Pink Leheriya Cape Saree",
+      "tag": "#IndoWestern",
+      "logTitle": "Designer's Note:",
+      "logNote": "A bold and contemporary take on heritage fashion. This stunning fuchsia pink ensemble features a pre-draped silhouette, beautifully cinched with a hand-embroidered belt. It is elevated by a sheer, flowing Leheriya cape jacket adorned with heavy floral borders and playful bell sleeves.",
+      "url": "https://www.instagram.com/p/CtjbzlPhqv2/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "image": "/assets/uploads/screenshot-2026-08-24-at-5.01.37 pm.png",
+      "colorGroup": "Red"
+    },
+      {
+      "title": "Intricate Antique Zardozi Work",
+      "tag": "#BehindTheSeams",
+      "logTitle": "Karigar's Log:",
+      "logNote": "A close-up look at our master artisans bringing a masterpiece to life with meticulous needlework and sparkling embellishments.",
+      "url": "https://www.instagram.com/reels/CzEL0CxPXny/",
+      "image": "/assets/stories1.png",
+      "colorGroup": "gold"
+    },
+    {
+      "url": "https://www.instagram.com/reel/CyvDco-vOOw/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "tag": "#FestiveWear",
+      "logTitle": "Karigar's Log:",
+      "logNote": "A bright and vibrant yellow draped saree designed for the modern woman. Featuring elegant cascading ruffles and exquisite floral vine hand-embroidery along the borders, this outfit is the perfect blend of playful energy and traditional craftsmanship.",
+      "title": "Vibrant Yellow Ruffle Saree",
+      "colorGroup": "gold",
+      "image": "/assets/uploads/screenshot-2026-08-24-at-4.58.01 pm.png"
+    },
+      
+    {
+      "title": "Custom Masterpiece for casuals",
+      "tag": "#Featured",
+      "logTitle": "Designer's Note:",
+      "logNote": "Experience the beauty of custom tailoring with this masterpiece.",
+      "url": "https://www.instagram.com/reels/CxLErwePmQa/",
+      "image": "/assets/stories4.png",
+      "colorGroup": "emerald"
+    }
+  ]
+}
