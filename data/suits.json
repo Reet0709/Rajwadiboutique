@@ -35,6 +35,15 @@
       "colorGroup": "blue",
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.40.54 am.png",
       "category": "unstitched"
+    },
+    {
+      "category": "suits",
+      "image": "/assets/uploads/screenshot-2026-09-24-at-10.58.58 am.png",
+      "price": 3000,
+      "name": "Red Suit",
+      "work": "gota-patti",
+      "colorGroup": "red",
+      "fabric": "cotton"
     }
   ]
 }
