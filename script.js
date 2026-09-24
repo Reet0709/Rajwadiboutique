@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initServiceCards();
   initTestimonials();
   initTransformationSlider();
+  initLightbox();
 });
 
 /* =========================================
@@ -2083,4 +2084,54 @@ function initTransformationSlider() {
   if (againBtn) againBtn.addEventListener('click', spin);
 })();
 
+/* =========================================
+   LIGHTBOX 
+   ========================================= */
+function initLightbox() {
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  if (!lightbox || !lightboxImg) return;
+
+  // Event delegation to catch clicks on dynamically loaded images
+  document.body.addEventListener('click', (e) => {
+    // If they click on a product image div or inside it
+    const suitImgDiv = e.target.closest('.suit-img');
+    if (suitImgDiv) {
+      // Extract URL from the background-image inline style
+      const bgStyle = suitImgDiv.style.backgroundImage;
+      if (bgStyle && bgStyle !== 'none') {
+        const urlMatch = bgStyle.match(/url\(['"]?(.*?)['"]?\)/);
+        if (urlMatch && urlMatch[1]) {
+          lightboxImg.src = urlMatch[1];
+          lightbox.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    }
+  });
+
+  const closeLightbox = () => {
+    lightbox.classList.add('hidden');
+    document.body.style.overflow = '';
+    // Clear src after animation
+    setTimeout(() => {
+      lightboxImg.src = '';
+    }, 300);
+  };
+
+  closeBtn?.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+  
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+      closeLightbox();
+    }
+  });
+}
 
