@@ -1436,6 +1436,7 @@ async function initSuitsShop() {
             <p class="suit-fabric">${suit.fabric.charAt(0).toUpperCase() + suit.fabric.slice(1)} · ${suit.work.replace('-', ' ')}</p>
             <div class="suit-meta">
               <span class="suit-price">₹${suit.price.toLocaleString('en-IN')}</span>
+              <span class="suit-custom-badge">Customisation Available</span>
             </div>
             <button class="suit-order-btn magnetic" data-code="${suitCode}" data-name="${suit.name}">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
