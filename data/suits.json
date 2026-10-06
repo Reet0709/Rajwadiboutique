@@ -5,7 +5,7 @@
       "price": 3999,
       "fabric": "chanderi",
       "work": "handwork",
-      "colorGroup": "blue",
+      "colorGroup": null,
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.38.46 am.png",
       "category": "unstitched",
       "media": [
@@ -57,8 +57,7 @@
       "work": "zardozi",
       "colorGroup": "gold",
       "media": [
-        "/assets/uploads/transform_this_draft_footage_i-2.mp4",
-        "/assets/uploads/screenshot-2026-08-24-at-4.58.01 pm.png"
+        "/assets/uploads/transform_this_draft_footage_i-2.mp4"
       ]
     }
   ]
