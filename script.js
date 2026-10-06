@@ -1462,12 +1462,18 @@ async function initSuitsShop() {
           </div>`;
       }
 
+      let detailsArr = [];
+      if (suit.fabric) detailsArr.push(suit.fabric.charAt(0).toUpperCase() + suit.fabric.slice(1));
+      if (suit.work) detailsArr.push(suit.work.replace(/-/g, ' '));
+      let detailsStr = detailsArr.join(' · ');
+      let detailsHtml = detailsStr ? `<p class="suit-fabric">${detailsStr}</p>` : '';
+
       html += `
         <div class="suit-card" data-category="${cat}" data-code="${suitCode}">
           ${mediaHtml}
           <div class="suit-info">
             <h4 class="suit-name">${suit.name}</h4>
-            <p class="suit-fabric">${suit.fabric.charAt(0).toUpperCase() + suit.fabric.slice(1)} · ${suit.work.replace('-', ' ')}</p>
+            ${detailsHtml}
             <div class="suit-meta">
               <span class="suit-price">₹${suit.price.toLocaleString('en-IN')}</span>
               <span class="suit-custom-badge">Customisation Available</span>
