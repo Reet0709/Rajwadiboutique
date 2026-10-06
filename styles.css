@@ -7447,18 +7447,19 @@ button {
   letter-spacing: 0.5px;
 }
 
+
 /* ---- Media Slider (Multiple Images/Videos) ---- */
 .suit-media-container {
   position: relative;
   width: 100%;
-  height: 240px;
+  height: 380px; /* Increased from 240px for better vertical image display */
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent; /* Changed to transparent to blend better */
 }
 
 @media (max-width: 480px) {
   .suit-media-container {
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -7483,3 +7484,4 @@ button {
   scroll-snap-align: start;
   object-fit: contain; /* This prevents zooming and shows the full image */
 }
+
