@@ -48,6 +48,18 @@
       "work": "gota-patti",
       "colorGroup": "red",
       "fabric": "cotton"
+    },
+    {
+      "category": "saree",
+      "name": "Yellow Saree",
+      "price": 3000,
+      "fabric": "chiffon",
+      "work": "zardozi",
+      "colorGroup": "gold",
+      "media": [
+        "/assets/uploads/transform_this_draft_footage_i-2.mp4",
+        "/assets/uploads/screenshot-2026-08-24-at-4.58.01 pm.png"
+      ]
     }
   ]
 }
