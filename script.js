@@ -1406,11 +1406,37 @@ async function initSuitsShop() {
     // 2. Generate HTML for each suit
     let html = '';
     data.suits.forEach((suit, index) => {
-      // Map color groups to gradients if image is missing
-      let bgStyle = '';
-      if (suit.image) {
-        bgStyle = `background: url('${suit.image}') center/cover;`;
+      // Read category from CMS data (or default to unstitched)
+      const cat = suit.category || 'unstitched';
+      const suitCode = `RJ-${(index+1).toString().padStart(3, '0')}`;
+      
+      // Handle multiple media items (videos or images)
+      let mediaItems = suit.media || [];
+      if (!mediaItems.length && suit.image) {
+        // Fallback to old 'image' field if it exists
+        mediaItems = [suit.image];
+      }
+      
+      let mediaHtml = '';
+      if (mediaItems.length > 0) {
+        mediaHtml = `
+          <div class="suit-media-container">
+            <div class="suit-code-badge" style="z-index: 10; pointer-events: none;">${suitCode}</div>
+            <div class="suit-media-slider">
+        `;
+        mediaItems.forEach(url => {
+          const isVideo = url.match(/\.(mp4|webm|ogg|mov)$/i);
+          if (isVideo) {
+            mediaHtml += `<video class="suit-media-item" src="${url}" autoplay loop muted playsinline></video>`;
+          } else {
+            mediaHtml += `<img class="suit-media-item" src="${url}" alt="${suit.name}">`;
+          }
+        });
+        mediaHtml += `
+            </div>
+          </div>`;
       } else {
+        // Fallback gradient if absolutely no media is provided
         const gradients = {
           red: 'linear-gradient(135deg, #8B0000, #C9A96E, #A68B4B)',
           green: 'linear-gradient(135deg, #2C5F2E, #4A7A4C, #C5D1C0)',
@@ -1419,18 +1445,16 @@ async function initSuitsShop() {
           pastel: 'linear-gradient(135deg, #E8B4A0, #F2D7D0, #D4A5A5)',
           dark: 'linear-gradient(135deg, #4B0082, #7851A9, #B8A9C9)'
         };
-        bgStyle = `background: ${gradients[suit.colorGroup] || gradients['pastel']};`;
+        const bgStyle = `background: ${gradients[suit.colorGroup] || gradients['pastel']};`;
+        mediaHtml = `
+          <div class="suit-img" style="${bgStyle}">
+            <div class="suit-code-badge">${suitCode}</div>
+          </div>`;
       }
-
-      // Read category from CMS data (or default to unstitched)
-      const cat = suit.category || 'unstitched';
-      const suitCode = `RJ-${(index+1).toString().padStart(3, '0')}`;
 
       html += `
         <div class="suit-card" data-category="${cat}" data-code="${suitCode}">
-          <div class="suit-img" style="${bgStyle}">
-            <div class="suit-code-badge">${suitCode}</div>
-          </div>
+          ${mediaHtml}
           <div class="suit-info">
             <h4 class="suit-name">${suit.name}</h4>
             <p class="suit-fabric">${suit.fabric.charAt(0).toUpperCase() + suit.fabric.slice(1)} · ${suit.work.replace('-', ' ')}</p>
@@ -1511,7 +1535,6 @@ async function initSuitsShop() {
     suitsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">Unable to load suits at this time.</p>';
   }
 }
-
 /* =========================================
    SERVICE CARDS — Staggered Entrance
    ========================================= */
