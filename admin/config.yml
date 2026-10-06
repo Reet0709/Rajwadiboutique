@@ -24,7 +24,11 @@ collections:
               - {label: "Fabric", name: "fabric", widget: "select", options: ["silk", "cotton", "georgette", "chiffon", "chanderi"]}
               - {label: "Work Type", name: "work", widget: "select", options: ["zardozi", "gota-patti", "thread-work", "printed", "handwork"]}
               - {label: "Color Group", name: "colorGroup", widget: "select", options: ["red", "green", "blue", "gold", "pastel", "dark"]}
-              - {label: "Image", name: "image", widget: "image"}
+              - label: "Media Gallery (Images/Videos)"
+                name: "media"
+                widget: "list"
+                field: {label: "Media File", name: "file", widget: "file"}
+              
               
   - name: "atelier"
     label: "Digital Atelier (Reels)"
