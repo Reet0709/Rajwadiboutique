@@ -1537,7 +1537,7 @@ async function initSuitsShop() {
         const code = btn.getAttribute('data-code');
         const name = btn.getAttribute('data-name');
         const msg = encodeURIComponent(
-          `Hello Rajwadi Boutique! 🌸\n\nI'd like to order this unstitched suit:\n📋 Code: *${code}*\n👗 Name: *${name}*\n\nPlease share availability, price, and customisation options. Thank you!`
+          `Hello Rajwadi Boutique! 🌸\n\nI'd like to order this:\n📋 Code: *${code}*\n👗 Name: *${name}*\n\nPlease share availability, price, and customisation options. Thank you!`
         );
         window.open(`https://wa.me/918559985003?text=${msg}`, '_blank');
       });
