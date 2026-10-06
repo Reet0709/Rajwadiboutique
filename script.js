@@ -1433,7 +1433,17 @@ async function initSuitsShop() {
           }
         });
         mediaHtml += `
-            </div>
+            </div>`;
+            
+        // Add navigation arrows if there are multiple items
+        if (mediaItems.length > 1) {
+          mediaHtml += `
+            <button class="slider-btn prev-btn" onclick="this.parentElement.querySelector('.suit-media-slider').scrollBy({left: -300, behavior: 'smooth'})">❮</button>
+            <button class="slider-btn next-btn" onclick="this.parentElement.querySelector('.suit-media-slider').scrollBy({left: 300, behavior: 'smooth'})">❯</button>
+          `;
+        }
+        
+        mediaHtml += `
           </div>`;
       } else {
         // Fallback gradient if absolutely no media is provided
