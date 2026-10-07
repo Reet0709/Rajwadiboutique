@@ -7483,6 +7483,7 @@ button {
   height: 100%;
   scroll-snap-align: start;
   object-fit: contain; /* This prevents zooming and shows the full image */
+  cursor: pointer;
 }
 
 
