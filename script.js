@@ -2138,6 +2138,7 @@ function initLightbox() {
   document.body.addEventListener('click', (e) => {
     // If they click on a product image div or inside it
     const suitImgDiv = e.target.closest('.suit-img');
+    const suitMediaItem = e.target.closest('img.suit-media-item');
     if (suitImgDiv) {
       // Extract URL from the background-image inline style
       const bgStyle = suitImgDiv.style.backgroundImage;
@@ -2149,6 +2150,11 @@ function initLightbox() {
           document.body.style.overflow = 'hidden';
         }
       }
+      } else if (suitMediaItem) {
+      // Extract URL from src attribute of img tag
+      lightboxImg.src = suitMediaItem.src;
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
     }
   });
 
