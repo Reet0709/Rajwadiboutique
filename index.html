@@ -221,8 +221,9 @@
       <!-- RIGHT: Hero Video Showcase -->
       <div class="hero-right">
         <div class="hero-video-wrapper">
-          <video autoplay loop muted playsinline class="hero-video">
-            <source src="assets/hero.mov">
+            <video autoplay loop muted playsinline webkit-playsinline preload="auto" class="hero-video">
+            <source src="assets/hero.mp4" type="video/mp4">
+            <source src="assets/hero.mov" type="video/quicktime">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -408,7 +409,10 @@
         <!-- Right Side: Video -->
         <div class="trans-content-right trans-visual-panel reveal delay-3">
           <div class="memory-video-frame">
-            <video class="memory-video" src="assets/memory_weaving.mov" autoplay loop muted playsinline aria-label="Memory Weaving Transformation Video"></video>
+<video class="memory-video" autoplay loop muted playsinline webkit-playsinline preload="auto" aria-label="Memory Weaving Transformation Video">
+              <source src="assets/memory_weaving.mp4" type="video/mp4">
+              <source src="assets/memory_weaving.mov" type="video/quicktime">
+            </video>
           </div>
         </div>
       </div>
