@@ -870,6 +870,11 @@ button {
   opacity: 0;
   animation: heroFadeUp 1.2s var(--ease-out-expo) 0.4s forwards;
   transform: translateY(30px);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
 }
 
 .hero-video-wrapper::after {
