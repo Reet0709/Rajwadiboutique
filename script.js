@@ -24,7 +24,43 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonials();
   initTransformationSlider();
   initLightbox();
+   initAutoplayVideos();
 });
+
+
+/* =========================================
+   AUTOPLAY VIDEOS (SAFARI & IOS COMPATIBILITY)
+   ========================================= */
+function initAutoplayVideos() {
+  const tryPlayVideos = () => {
+    const videos = document.querySelectorAll('video[autoplay]');
+    videos.forEach(video => {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('webkit-playsinline', '');
+
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If browser policy blocked immediate autoplay, play on first interaction
+          const onFirstTouch = () => {
+            video.play().catch(() => {});
+            document.removeEventListener('touchstart', onFirstTouch);
+            document.removeEventListener('click', onFirstTouch);
+          };
+          document.addEventListener('touchstart', onFirstTouch, { once: true, passive: true });
+          document.addEventListener('click', onFirstTouch, { once: true, passive: true });
+        });
+      }
+    });
+  };
+
+  tryPlayVideos();
+}
+
 
 /* =========================================
    LOADING SCREEN
