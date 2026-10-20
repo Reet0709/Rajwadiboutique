@@ -41,13 +41,13 @@ collections:
             name: "reels"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Instagram Reel URL", name: "url", widget: "string"}
-              - {label: "Tag (e.g. #Bridal)", name: "tag", widget: "string"}
-              - {label: "Log Title", name: "logTitle", widget: "string"}
-              - {label: "Log Note", name: "logNote", widget: "text"}
-              - {label: "Color Theme", name: "colorGroup", widget: "string"}
-              - {label: "Video Cover Image", name: "image", widget: "image"}
+              - {label: "Instagram Reel URL", name: "url", widget: "string", required: true}
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tag (e.g. #Bridal)", name: "tag", widget: "string", required: false}
+              - {label: "Log Title", name: "logTitle", widget: "string", required: false}
+              - {label: "Log Note", name: "logNote", widget: "text", required: false}
+              - {label: "Color Theme", name: "colorGroup", widget: "string", required: false}
+              - {label: "Video Cover Image", name: "image", widget: "image", required: false}
 
   - name: "heritage_diary"
     label: "Heritage Diary (Testimonials)"
