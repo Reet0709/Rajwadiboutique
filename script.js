@@ -601,10 +601,16 @@ async function initReelsCarousel() {
         gold: { c1: '#DAA520', c2: '#801824', c3: '#FAF6F0' }
       };
       
-      const theme = gradients[reel.colorGroup] || gradients.gold;
+      const themeKey = reel.colorGroup ? reel.colorGroup.toLowerCase() : '';
+      const theme = gradients[themeKey] || gradients[reel.colorGroup] || gradients.gold;
+      const cardTitle = reel.title || '';
+      const cardTag = reel.tag || '';
+      const cardLogTitle = reel.logTitle || '';
+      const cardLogNote = reel.logNote || '';
+      const cardImage = reel.image || 'assets/logo.png';
       
       html += `
-        <div class="reel-card" data-url="${reel.url}">
+        <div class="reel-card" data-url="${reel.url || '#'}">
           <div class="card-back-decor">
             <img src="assets/logo.png" alt="Emblem Mandala" />
           </div>
@@ -620,15 +626,16 @@ async function initReelsCarousel() {
               <path d="M9 16 L18 6 M15 16 L6 6" />
             </svg>
           </div>
+           ${(cardLogTitle || cardLogNote) ? `
           <div class="card-artisan-tag">
             <div class="tag-thread"></div>
-            <span class="tag-title">${reel.logTitle}</span>
-            <p class="tag-note">${reel.logNote}</p>
-          </div>
+             ${cardLogTitle ? `<span class="tag-title">${cardLogTitle}</span>` : ''}
+            ${cardLogNote ? `<p class="tag-note">${cardLogNote}</p>` : ''}
+          </div>` : ''}
           <div class="phone-frame">
             <div class="phone-speaker"></div>
             <div class="phone-screen">
-              <img src="${reel.image}" alt="${reel.title}" />
+              <img src="${cardImage}" alt="${cardTitle || 'Reel'}" />
               <div class="reel-play-overlay">
                 <div class="play-btn-circle">
                   <svg viewBox="0 0 24 24" fill="currentColor">
@@ -637,8 +644,8 @@ async function initReelsCarousel() {
                 </div>
               </div>
               <div class="reel-info">
-                <span class="reel-tag">${reel.tag}</span>
-                <h4>${reel.title}</h4>
+               ${cardTag ? `<span class="reel-tag">${cardTag}</span>` : ''}
+                ${cardTitle ? `<h4>${cardTitle}</h4>` : ''}
               </div>
             </div>
           </div>
