@@ -47,7 +47,7 @@ collections:
               - {label: "Log Title", name: "logTitle", widget: "string", required: false}
               - {label: "Log Note", name: "logNote", widget: "text", required: false}
               - {label: "Color Theme", name: "colorGroup", widget: "string", required: false}
-              - {label: "Video Cover Image", name: "image", widget: "image", required: false}
+              - {label: "Video Cover Image", name: "image", widget: "image", required: true}
 
   - name: "heritage_diary"
     label: "Heritage Diary (Testimonials)"
