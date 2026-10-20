@@ -1,16 +1,16 @@
 {
   "suits": [
     {
-      "name": "Chanderi Suit",
-      "price": 3999,
-      "fabric": "chanderi",
-      "work": "handwork",
+      "name": "Noor",
+      "price": 3850,
+      "fabric": "Dola silk",
+      "work": "Dola silk 3-piece unstitched suit in teal blue with a silver and gold -dotted wave pattern, a beaded hem border and a teal-and-red colour-block dupatta with zari borders. Custom tailoring available to match your measurements and style.",
       "colorGroup": null,
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.38.46 am.png",
       "category": "unstitched",
       "media": [
         "/assets/uploads/screenshot-2026-09-24-at-10.38.46 am.png",
-        "/assets/uploads/screenshot-2026-10-06-at-11.35.20 am.png"
+        "/assets/uploads/photoroom_20260916_192210.jpg"
       ]
     },
     {
