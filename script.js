@@ -1398,6 +1398,21 @@ function initColourWheel() {
   drawWheel();
 }
 
+window.scrollSuitSlider = function(btn, direction) {
+  const container = btn.closest('.suit-media-container');
+  if (!container) return;
+  const slider = container.querySelector('.suit-media-slider');
+  if (!slider) return;
+  const slides = slider.querySelectorAll('.suit-media-slide, .suit-media-item');
+  const maxIdx = Math.max(0, slides.length - 1);
+  const slideWidth = slider.clientWidth;
+  const currentIdx = Math.round(slider.scrollLeft / slideWidth);
+  const targetIdx = Math.max(0, Math.min(maxIdx, currentIdx + direction));
+  slider.scrollTo({
+    left: targetIdx * slideWidth,
+    behavior: 'smooth'
+  });
+};
 
 
 /* =========================================
@@ -1437,9 +1452,9 @@ async function initSuitsShop() {
         mediaItems.forEach(url => {
           const isVideo = url.match(/\.(mp4|webm|ogg|mov)$/i);
           if (isVideo) {
-            mediaHtml += `<video class="suit-media-item" src="${url}" autoplay loop muted playsinline></video>`;
+            mediaHtml += `<div class="suit-media-slide"><video class="suit-media-item" src="${url}" autoplay loop muted playsinline></video></div>`;
           } else {
-            mediaHtml += `<img class="suit-media-item" src="${url}" alt="${suit.name}">`;
+            mediaHtml += `<div class="suit-media-slide"><img class="suit-media-item" src="${url}" alt="${suit.name}"></div>`;
           }
         });
         mediaHtml += `
@@ -1448,8 +1463,8 @@ async function initSuitsShop() {
         // Add navigation arrows if there are multiple items
         if (mediaItems.length > 1) {
           mediaHtml += `
-            <button class="slider-btn prev-btn" onclick="this.parentElement.querySelector('.suit-media-slider').scrollBy({left: -300, behavior: 'smooth'})">❮</button>
-            <button class="slider-btn next-btn" onclick="this.parentElement.querySelector('.suit-media-slider').scrollBy({left: 300, behavior: 'smooth'})">❯</button>
+            <button type="button" class="slider-btn prev-btn" aria-label="Previous image" onclick="event.stopPropagation(); window.scrollSuitSlider(this, -1);">❮</button>
+            <button type="button" class="slider-btn next-btn" aria-label="Next image" onclick="event.stopPropagation(); window.scrollSuitSlider(this, 1);">❯</button>
           `;
         }
         
