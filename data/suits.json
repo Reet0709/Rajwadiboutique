@@ -82,6 +82,39 @@
       "media": [
         "/assets/uploads/transform_this_draft_footage_i-2-1-online-video-cutter.com-.mp4"
       ]
+    },
+    {
+      "category": "unstitched",
+      "name": "Surkh ",
+      "work": "Dola silk 3-piece unstitched suit in rich rust red with a self-woven floral weave, a hand-embroidered zari and sequin yoke, and a matching dupatta with a woven zari border. Custom tailoring available to match your measurements and style.",
+      "price": 3950,
+      "fabric": "Dola silk",
+      "media": [
+        "/assets/uploads/photoroom_20260917_132403.jpg",
+        "/assets/uploads/photoroom_20260917_132849.jpg"
+      ]
+    },
+    {
+      "category": "unstitched",
+      "name": "Firoza",
+      "price": 4150,
+      "fabric": "Chanderi",
+      "work": "Chanderi 3-piece unstitched suit in soft sea green colour with a hand-embellished hem border and a beige printed dupatta with tasselled ends. Custom tailoring available to match your measurements and style.",
+      "media": [
+        "/assets/uploads/photoroom_20260917_151832.jpg",
+        "/assets/uploads/photoroom_20260917_152519.jpg"
+      ]
+    },
+    {
+      "category": "unstitched",
+      "name": "Gulabi Dhoop",
+      "price": 4150,
+      "fabric": "Chanderi ",
+      "work": "Chanderi 3-piece unstitched suit in warm peach with a hand-embellished hem border and a beige printed dupatta with tasselled ends. Custom tailoring available to match your measurements and style.",
+      "media": [
+        "/assets/uploads/photoroom_20260917_134529.jpg",
+        "/assets/uploads/photoroom_20260917_134838.jpg"
+      ]
     }
   ]
 }
