@@ -4,7 +4,7 @@
       "name": "Noor",
       "price": 3850,
       "fabric": "Dola silk",
-      "work": "Dola silk 3-piece unstitched suit in teal blue with a silver and gold -dotted wave pattern, a beaded hem border and a teal-and-red colour-block dupatta with zari borders. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in teal blue with a silver and gold -dotted wave pattern, a beaded hem border and a teal-and-red colour-block dupatta with zari borders. Custom tailoring available to match your measurements and style.",
       "colorGroup": null,
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.38.46 am.png",
       "category": "unstitched",
@@ -17,7 +17,7 @@
       "name": "Gulzaar",
       "price": 3850,
       "fabric": "Dola silk",
-      "work": "Dola silk 3-piece unstitched suit in purple with a silver and gold -dotted wave pattern, a beaded zari hem border and a purple-and-pink colour-block dupatta with embroidered zari borders. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in purple with a silver and gold -dotted wave pattern, a beaded zari hem border and a purple-and-pink colour-block dupatta with embroidered zari borders. Custom tailoring available to match your measurements and style.",
       "colorGroup": null,
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.39.21 am.png",
       "category": "unstitched",
@@ -30,7 +30,7 @@
       "name": "Suraj Mukhi",
       "price": 4550,
       "fabric": "Gazzi silk",
-      "work": "Gazzi silk 3-piece unstitched suit in rich purple with a mustard tie-dye yoke, a hand-embroidered neckline and a matching dupatta with a zari border. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in rich purple with a mustard tie-dye yoke, a hand-embroidered neckline and a matching dupatta with a zari border. Custom tailoring available to match your measurements and style.",
       "colorGroup": null,
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.40.23 am.png",
       "category": "unstitched",
@@ -43,7 +43,7 @@
       "name": "Neelambari",
       "price": 2950,
       "fabric": "Crape",
-      "work": "Crape 3-piece unstitched suit in deep indigo blue with hand-tied bandhani dots in white and yellow, a hand-embroidered floral neck panel and a matching bandhani dupatta with a lace edge. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in deep indigo blue with hand-tied bandhani dots in white and yellow, a hand-embroidered floral neck panel and a matching bandhani dupatta with a lace edge. Custom tailoring available to match your measurements and style.",
       "colorGroup": null,
       "image": "/assets/uploads/screenshot-2026-09-24-at-10.40.54 am.png",
       "category": "unstitched",
@@ -61,12 +61,12 @@
         "/assets/uploads/photoroom_20260916_212245.jpg"
       ],
       "fabric": "Crape and Chiffon ",
-      "work": "Crape 3-piece unstitched suit in green colour  with hand-tied bandhani dots in white and yellow, a hand-embroidered floral neck panel and a matching bandhani dupatta with a lace edge. Custom tailoring available to match your measurements and style."
+      "work": "3-piece unstitched suit in green colour  with hand-tied bandhani dots in white and yellow, a hand-embroidered floral neck panel and a matching bandhani dupatta with a lace edge. Custom tailoring available to match your measurements and style."
     },
     {
       "category": "unstitched",
       "name": "Surkh ",
-      "work": "Dola silk 3-piece unstitched suit in rich rust red with a self-woven floral weave, a hand-embroidered zari and sequin yoke, and a matching dupatta with a woven zari border. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in rich rust red with a self-woven floral weave, a hand-embroidered zari and sequin yoke, and a matching dupatta with a woven zari border. Custom tailoring available to match your measurements and style.",
       "price": 3950,
       "fabric": "Dola silk",
       "media": [
@@ -79,7 +79,7 @@
       "name": "Firoza",
       "price": 4150,
       "fabric": "Chanderi",
-      "work": "Chanderi 3-piece unstitched suit in soft sea green colour with a hand-embellished hem border and a beige printed dupatta with tasselled ends. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in soft sea green colour with a hand-embellished hem border and a beige printed dupatta with tasselled ends. Custom tailoring available to match your measurements and style.",
       "media": [
         "/assets/uploads/photoroom_20260917_151832.jpg",
         "/assets/uploads/photoroom_20260917_152519.jpg"
@@ -90,11 +90,33 @@
       "name": "Gulabi Dhoop",
       "price": 4150,
       "fabric": "Chanderi ",
-      "work": "Chanderi 3-piece unstitched suit in warm peach with a hand-embellished hem border and a beige printed dupatta with tasselled ends. Custom tailoring available to match your measurements and style.",
+      "work": "3-piece unstitched suit in warm peach with a hand-embellished hem border and a beige printed dupatta with tasselled ends. Custom tailoring available to match your measurements and style.",
       "media": [
         "/assets/uploads/photoroom_20260917_134529.jpg",
         "/assets/uploads/photoroom_20260917_134838.jpg"
       ]
+    },
+    {
+      "category": "unstitched",
+      "name": "Mandala",
+      "work": "3-piece unstitched suit in rich royal purple with hand-tied bandhani, gota patti and zari mandala motifs, and a matching dupatta with a woven zari border and gota lace edge. Custom tailoring available to match your measurements and style.",
+      "fabric": "Dola silk",
+      "price": 4250,
+      "media": [
+        "/assets/uploads/screenshot-2026-09-24-at-10.40.23 am.png",
+        "/assets/uploads/photoroom_20260916_210518.jpg"
+      ]
+    },
+    {
+      "category": "unstitched",
+      "media": [
+        "/assets/uploads/photoroom_20260917_152957.jpg",
+        "/assets/uploads/photoroom_20260917_152837.jpg"
+      ],
+      "name": "Firdaus",
+      "price": 3850,
+      "fabric": "Silk",
+      "work": "3-piece unstitched suit in vivid turquoise with hand-embroidered palm motifs in zari, sequins and beads, and a matching dupatta with a woven zari border and gold edging. Custom tailoring available to match your measurements and style"
     }
   ]
 }
